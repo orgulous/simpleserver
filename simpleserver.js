@@ -52,14 +52,17 @@ var server = http.createServer(function (request, response) {
                 }
             });
             break;
-            /* old code that just sends a simple message
-            response.writeHead(200, {
-                'Content-Type': 'text/plain'
-            });
-            response.write("This is Test Message. Hello everyone");
-            response.end();
-            break;
-            */
+
+
+        /* old code that just sends a simple message
+        response.writeHead(200, {
+            'Content-Type': 'text/plain'
+        });
+        response.write("This is Test Message. Hello everyone");
+        response.end();
+        break;
+        
+        ------------- Deprecated
         case '/HtmlPage1.html':
             fs.readFile(__dirname + path, function (error, data) {
                 if (error) {
@@ -75,6 +78,8 @@ var server = http.createServer(function (request, response) {
                 }
             });
             break;
+
+        ------------- Deprecated
         case '/HtmlPage2.html':
             fs.readFile(__dirname + path, function (error, data) {
                 if (error) {
@@ -90,6 +95,8 @@ var server = http.createServer(function (request, response) {
                 }
             });
             break;
+        */
+
         default:
             response.writeHead(404);
             response.write("opps this doesn't exist - 404");
