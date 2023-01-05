@@ -1,5 +1,5 @@
 var formId = document.getElementById("button");
-function run(){
-  alert("under construction"); 
+function run() {
+  alert("Thank you for your message");
 };
 formId.addEventListener("click", run, false);

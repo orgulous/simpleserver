@@ -3,36 +3,41 @@
 
 <head>
     <TITLE>Luke's Website</TITLE>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 </head>
 
 <body>
     <h1 class="text-center pt-4"> Welcome to Luke Chen's Homepage </h1>
 
-    <div class="container-fluid pt-4 px-5 pb-4 maxWidth">
-        <div class="row text-white" >
-          <div class="border col-sm bg-primary p-2" align="center">
-            Projects
-          </div>
-          <div class="border col-sm bg-success p-2" align="center" >
-            Skills
-          </div>
-          <div class="border col-sm bg-danger p-2" align="center">
-            Links
-          </div>
-        </div>
-        <div class="row" >
-            <div class="border col-sm" align="left">
-            Seeking software engineering internships in Spring/Summer 2023
+    <div class="container-fluid pt-4 px-5 pb-4 mainBox rowcontent fade-in-up">
+        <div class="row">
+            <div class="col-sm border glowbox">
+                <div class="row bg-primary p-2">
+                    <div class="col text-white text-center">
+                        Skills
+                    </div>
+                </div>
+                <div class="row rowcontent p-2 text-left">
+                    Air Force Officer seeking software engineering internships in Spring/Summer 2023
+                </div>
             </div>
-            <div class="border col-sm" align="left">
-                <div class="row ">
+            <div class="col-sm border glowbox">
+                <div class="row bg-success p-2 ">
+                    <div class="col text-white text-center">
+                        Skills
+                    </div>
+                </div>
+                <div class="row rowcontent p-2">
                     <div class="col-sm">
                         <ul>
                             <li>Python</li>
                             <li>Java</li>
                             <li>SQL</li>
+                            <li>Git</li>
+                            <li>vim</li>
                         </ul>
                     </div>
                     <div class="col-sm">
@@ -40,32 +45,112 @@
                             <li>SAS</li>
                             <li>R</li>
                             <li>HTML/CSS/JS</li>
+                            <li>Unix shells</li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <div class="border col-sm" align="center">
-                <a href="https://www.linkedin.com/in/luke-chen-77b48b62/">LinkedIn</a>
-                <br>
-                <a href="https://www.github.com/orgulous">GitHub</a>
+            <div class="col-sm border glowbox">
+                <div class="row p-2 bg-danger">
+                    <div class="col text-white text-center">
+                        Links
+                    </div>
+                </div>
+                <div class="row rowcontent p-2">
+                    <div class="col text-center">
+                        <a href="https://www.linkedin.com/in/luke-chen-77b48b62/">LinkedIn</a>
+                        <br>
+                        <a href="https://www.github.com/orgulous">GitHub</a>
+                        <br>
+                        <a href="https://twitter.com/reallukechen">Twitter</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm border glowbox">
+                <div class="row p-2" style="background-color: orange">
+                    <div class="col text-white text-center">
+                        Projects
+                    </div>
+                </div>
+                <div class="row rowcontent" align="left">
+                    <ul>
+                        <li> Personal Website (you're looking at it!)
+                        <li> Go (ancient Chinese board game). Uses Python to implement strategy board game. See Github
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm border glowbox">
+                <div class="row p-2 bg-info">
+                    <div class="col-sm text-white text-center">
+                        Coursework at UPenn
+                    </div>
+                </div>
+                <div class="row rowcontent text-left">
+                    <ul>
+                        <li> <a href=" https://www.seas.upenn.edu/~cis110/current/"> CIS 110 - Intro to Computer
+                                Programming</a>
+                        <li> <a href="https://www.seas.upenn.edu/~cis120/current/"> CIS 120 - Programming Languages and
+                                Techniques</a>
+                        <li> <a href="https://www.seas.upenn.edu/~cis160/current/"> CIS 160 - Mathematical Foundations
+                                of
+                                Computer Science </a>
+                        <li> <a href="https://catalog.upenn.edu/courses/cis/"> CIS 121 - Programming Languages and
+                                Technigues II</a>
+                        <li> <a href="https://www.cis.upenn.edu/~zives/cis550/"> CIS 450 - Database and Information
+                                Systems</a>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm border glowbox">
+                <div class="row p-2 bg-secondary">
+                    <div class="col-sm text-white text-center">
+                        Competencies
+                    </div>
+                </div>
+                <div class="row rowcontent text-center">
+                    Object-Oriented Programming, Data Science, AI/ML, Air Force Systems, Linear Algebra, Probability,
+                    and
+                    Calculus
+                </div>
             </div>
         </div>
     </div>
-    
+
     <fieldset align="center">
-        <legend> Please enter your information</legend>
+        <legend> Leave a message</legend>
         <form action="#" method="post">
-          <input type="text"/>
-          <label for="button">add</label>
-          <button type="submit" id="button">submit</button>
+            <input type="text" />
+            <label for="button">add</label>
+            <button type="submit" id="button">submit</button>
         </form>
     </fieldset>
     <script type="text/javascript" src="buttontest.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>   
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
 
+<script>
+    $(document).ready(function () {
+        const element = document.querySelector('.mainBox');
+        element.classList.add('animated', 'fadeIn');
+        setTimeout(function () {
+            element.classList.remove('fadeIn');
+        }, 1000);
+    });
 
+    /* Prevents resubmission error prompt */
+    if (window.history.replaceState) {
+        window.history.replaceState(null, null, window.location.href);
+    }
+</script>
 
 </html>
