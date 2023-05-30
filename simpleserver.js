@@ -52,6 +52,21 @@ var server = http.createServer(function (request, response) {
                 }
             });
             break;
+        case '/googleab7766f1571a92f3.html':
+            fs.readFile(__dirname + '/googleab7766f1571a92f3.html', function (error, data) {
+                if (error) {
+                    response.writeHead(404);
+                    response.write(error);
+                    response.end();
+                } else {
+                    response.writeHead(200, {
+                        'Content-Type': 'text/html'
+                    });
+                    response.write(data);
+                    response.end();
+                }
+            });
+            break;
 
 
         /* old code that just sends a simple message
