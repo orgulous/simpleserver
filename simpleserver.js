@@ -37,6 +37,22 @@ var server = http.createServer(function (request, response) {
             });
             break;
 
+        case "/chen_index.html":
+            fs.readFile(__dirname + '/chen_index.html', function (error, data) {
+                if (error) {
+                    response.writeHead(404);
+                    response.write(error);
+                    response.end();
+                } else {
+                    response.writeHead(200, {
+                        'Content-Type': 'text/html'
+                    });
+                    response.write(data);
+                    response.end();
+                }
+            });
+            break;
+
         case '/':
             fs.readFile(__dirname + '/HtmlPage1.html', function (error, data) {
                 if (error) {
