@@ -1,5 +1,5 @@
 // Fetch the CSV data and generate the cards
-fetch('test.csv')
+fetch('names.csv')
     .then(response => response.text())
     .then(data => {
         // Split the CSV data into rows
