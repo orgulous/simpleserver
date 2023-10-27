@@ -1,4 +1,5 @@
 <!doctype html>
+<!-- Copyright © Luke Chen-->
 <html lang="en">
 
 <head>
@@ -16,6 +17,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=VT323&display=swap">
 
     <link rel="manifest" href="/site.webmanifest">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 
@@ -26,8 +28,8 @@
     <div class="container-fluid pt-4 px-5 pb-4 mainBox rowcontent fade-in-up">
         <div class="row mb-3">
             <div class="col-sm border glowbox mr-sm-2 mb-sm-0 mb-3">
-                <div class="row bg-dark p-2">
-                    <div class="col text-white text-center">
+                <div class="row card-head p-2">
+                    <div class="col card-title-style text-center">
                         Bio
                     </div>
                 </div>
@@ -40,12 +42,12 @@
                 </div>
             </div>
             <div class="col-sm border glowbox ml-sm-2">
-                <div class="row p-2 bg-dark">
-                    <div class="col text-white text-center">
+                <div class="row card-head p-2">
+                    <div class="col card-title-style text-center">
                         Links
                     </div>
                 </div>
-                <div class="row rowcontent justify-content-center">
+                <div class="row rowcontent p-2">
                     <div class="col text-center">
                         <a href="https://www.linkedin.com/in/luke-chen-77b48b62/">LinkedIn</a>,
                         <a href="https://github.com/orgulous">Github</a>,
@@ -61,8 +63,8 @@
         </div>
         <div class="row mb-3">
             <div class="col-sm border glowbox">
-                <div class="row p-2 bg-dark">
-                    <div class="col text-white text-center">
+                <div class="row card-head p-2">
+                    <div class="col card-title-style text-center">
                         Projects
                     </div>
                 </div>
@@ -82,8 +84,8 @@
         </div>
         <div class="row">
             <div class="col-sm border glowbox">
-                <div class="row p-2 bg-dark">
-                    <div class="col text-white text-center">
+                <div class="row card-head p-2">
+                    <div class="col card-title-style text-center">
                         Skills
                     </div>
                 </div>
@@ -112,13 +114,14 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
+
 <script>
     $(document).ready(function () {
         const element = document.querySelector('.mainBox');
         element.classList.add('animated', 'fadeIn');
         setTimeout(function () {
             element.classList.remove('fadeIn');
-        }, 1000);
+        }, 1300);
     });
 
     /* Prevents resubmission error prompt */

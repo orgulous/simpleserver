@@ -25,27 +25,72 @@ ul {
     /* Adjust the desired height for the images */
 }
 
-.mainBox, h1 {
-    color:aliceblue
+.mainBox {
+    color: white;
+}
+
+h1 {
+    font-size: 45px;
+    color: white;
+    z-index: 1;
+    position: relative;
 }
 
 a {
-    color:greenyellow
+    color: #81e3f5;
 }
+
 a:hover {
-    color:goldenrod
+    color: goldenrod
 }
 
 body {
     font-family: 'VT323', monospace;
-    font-size: larger;
+    font-size: 20px;
+    letter-spacing: 1px;
+
+
+    /* Make sure the body takes up the full viewport */
     margin: 0;
     padding: 0;
-    height: 100vh;
-    background: linear-gradient(to top, #0f1557, #4959b1);
+    min-height: 100vh;
+
+    /* Ensure we can overlay the scanlines */
+    position: relative;
 }
 
-@keyframes ShimmeringAnimation {
-    0% { background-position: 100% 0; }
-    100% { background-position: 0 100%; }
+.card-title-style {
+    color: #171750;
+    font-size: x-large;
+}
+
+.card-head {
+    background-color: #C0C0C0;
+}
+
+body::before {
+    pointer-events: none;
+    content: "";
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    background: repeating-linear-gradient(to bottom,
+            rgba(255, 0, 0, 0.1),
+            /* More transparent red */
+            rgba(255, 0, 0, 0.1) 1px,
+            /* Wider line */
+            rgba(0, 255, 0, 0.1) 1px,
+            /* More transparent green */
+            rgba(0, 255, 0, 0.1) 2px,
+            /* Wider line */
+            rgba(0, 0, 255, 0.1) 2px,
+            /* More transparent blue */
+            rgba(0, 0, 255, 0.1) 3px
+            /* Wider line */
+        ), radial-gradient(circle at center, #081e4e, #050829);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
 }
